@@ -12,7 +12,6 @@ This work analyzes a large collection of high-resolution digital whole slide ima
 
 ### Core Pipeline Files
 - `main.py` / `main2.py` - Primary analysis pipelines
-- `annotation_expander.py` - Interactive semi-supervised learning tool for expanding labeled datasets
 - `utils.py` - Utility functions for image processing and feature extraction
 - `mlp_utils.py` - Multi-layer perceptron utilities for tile classification
 
