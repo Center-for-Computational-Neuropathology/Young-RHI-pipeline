@@ -24,10 +24,13 @@ This work analyzes a large collection of high-resolution digital whole slide ima
 ### Clustering & Embedding
 - **SPHERE** (Selective centroid Pooling with HDBSCAN and Embedding using Representative Extraction) - Novel deep learning modality for CTE prediction
 
-### Interactive Notebooks
-- `Example_AnnotationExpander.ipynb` - Demonstration of the annotation expansion workflow
-- `HemeMLP2.ipynb` - Hemosiderin detection using multilayer perceptrons
-- `VesselsExtractUMAPwHDBSCAN-KAN.ipynb` - Vessel extraction and analysis pipeline
+## Interactive Notebooks
+
+**Note**: Some notebooks are large and may not display directly on GitHub. Use these links to view them:
+
+- [Example AnnotationExpander Notebook](https://nbviewer.org/github/Center-for-Computational-Neuropathology/Young-RHI-pipeline/blob/main/Example_AnnotationExpander.ipynb)
+- [HemeMLP2 Notebook](https://nbviewer.org/github/Center-for-Computational-Neuropathology/Young-RHI-pipeline/blob/main/HemeMLP2.ipynb)
+- [Vessels Extract Notebook](https://nbviewer.org/github/Center-for-Computational-Neuropathology/Young-RHI-pipeline/blob/main/VesselsExtractUMAPwHDBSCAN-KAN.ipynb)
 
 ## Features
 
