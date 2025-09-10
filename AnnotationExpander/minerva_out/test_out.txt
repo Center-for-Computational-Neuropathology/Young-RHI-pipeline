@@ -1,0 +1,55 @@
+Sender: LSF System <lsfadmin@lg03a08.chimera.hpc.mssm.edu>
+Subject: Job 123909981: <test> in cluster <chimera> Exited
+
+Job <test> was submitted from host <lg03a01.chimera.hpc.mssm.edu> by user <koenid03> in cluster <chimera> at Fri Apr 12 16:48:12 2024
+Job was executed on host(s) <lg03a08.chimera.hpc.mssm.edu>, in queue <gpu>, as user <koenid03> in cluster <chimera> at Fri Apr 12 16:55:39 2024
+</hpc/users/koenid03> was used as the home directory.
+</sc/arion/projects/tauomics/danielk> was used as the working directory.
+Started at Fri Apr 12 16:55:39 2024
+Terminated at Fri Apr 12 16:57:34 2024
+Results reported at Fri Apr 12 16:57:34 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J "test"
+#BSUB -P acc_tauomics
+#BSUB -q gpu
+#BSUB -R v100
+#BSUB -gpu num=1 
+#BSUB -R rusage[mem=128000]
+#BSUB -n 1
+#BSUB -W 144:00
+#BSUB -oo /sc/arion/projects/tauomics/danielk/AnnotationExpander/minerva_out/test_out.txt
+#BSUB -eo /sc/arion/projects/tauomics/danielk/AnnotationExpander/minerva_out/test_error.txt
+cd /sc/arion/projects/tauomics/danielk/
+source activate GPUClean
+python /sc/arion/projects/tauomics/danielk/AnnotationExpander/test.py \
+--feat_dir /sc/arion/projects/tauomics/FeatureVectors/ParkmanRHI/dino
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   22.00 sec.
+    Max Memory :                                 480 MB
+    Average Memory :                             287.81 MB
+    Total Requested Memory :                     128000.00 MB
+    Delta Memory :                               127520.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   113 sec.
+    Turnaround time :                            562 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file </sc/arion/projects/tauomics/danielk/AnnotationExpander/minerva_out/test_error.txt> for stderr output of this job.
+

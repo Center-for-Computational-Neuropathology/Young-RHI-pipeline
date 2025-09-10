@@ -1,0 +1,55 @@
+Sender: LSF System <lsfadmin@lg03a12>
+Subject: Job 123905019: <resave> in cluster <chimera> Exited
+
+Job <resave> was submitted from host <lg03a01.chimera.hpc.mssm.edu> by user <koenid03> in cluster <chimera> at Fri Apr 12 16:09:32 2024
+Job was executed on host(s) <lg03a12>, in queue <gpu>, as user <koenid03> in cluster <chimera> at Fri Apr 12 16:09:37 2024
+</hpc/users/koenid03> was used as the home directory.
+</sc/arion/projects/tauomics/danielk> was used as the working directory.
+Started at Fri Apr 12 16:09:37 2024
+Terminated at Fri Apr 12 17:48:26 2024
+Results reported at Fri Apr 12 17:48:26 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J "resave"
+#BSUB -P acc_tauomics
+#BSUB -q gpu
+#BSUB -R v100
+#BSUB -gpu num=1 
+#BSUB -R rusage[mem=128000]
+#BSUB -n 1
+#BSUB -W 144:00
+#BSUB -oo /sc/arion/projects/tauomics/danielk/AnnotationExpander/minerva_out/resave_out.txt
+#BSUB -eo /sc/arion/projects/tauomics/danielk/AnnotationExpander/minerva_out/resave_error.txt
+cd /sc/arion/projects/tauomics/danielk/
+source activate GPUClean
+python /sc/arion/projects/tauomics/danielk/AnnotationExpander/resave.py \
+--feat_dir /sc/arion/projects/tauomics/FeatureVectors/ParkmanRHI/dino
+------------------------------------------------------------
+
+Exited with exit code 135.
+
+Resource usage summary:
+
+    CPU time :                                   6141.00 sec.
+    Max Memory :                                 127999 MB
+    Average Memory :                             63916.53 MB
+    Total Requested Memory :                     128000.00 MB
+    Delta Memory :                               1.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   5928 sec.
+    Turnaround time :                            5934 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file </sc/arion/projects/tauomics/danielk/AnnotationExpander/minerva_out/resave_error.txt> for stderr output of this job.
+

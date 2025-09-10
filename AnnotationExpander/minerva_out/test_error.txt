@@ -1,0 +1,12 @@
+/local/JOBS/1712954892.123909981.shell: line 13: activate: No such file or directory
+2024-04-12 16:56:39.402190: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-04-12 16:56:39.982236: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-04-12 16:56:39.982387: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-04-12 16:56:40.122559: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-04-12 16:56:40.176125: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-04-12 16:56:55.959850: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/sc/arion/projects/tauomics/danielk/AnnotationExpander/test.py", line 13, in <module>
+    max_memory_mb = int(os.environ['LSB_SUB_RES_REQ'].split('mem=')[1].split(']')[0])-500 # subtract 500 for safety 
+NameError: name 'os' is not defined
