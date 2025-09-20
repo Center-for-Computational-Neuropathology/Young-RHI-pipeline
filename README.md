@@ -72,14 +72,14 @@ PIL
 ## Installation
 
 ```bash
-git clone https://github.com/username/Young_RHI_pipeline.git
+git clone https://github.com/Center-for-Computational-Neuropathology/Young-RHI-pipeline.git
 cd Young_RHI_pipeline
 pip install -r requirements.txt
 ```
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License
 
 ## Contact
 
