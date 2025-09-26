@@ -1,8 +1,5 @@
 # Deep Learning Pipeline for Characterizing Early Microstructural Brain Changes Following Repetitive Head Impacts
 
-<img width="1177" height="362" alt="Screenshot 2025-09-26 at 12 02 33 PM" src="https://github.com/user-attachments/assets/3f31d788-ddcc-4d61-ad84-31936f66efa2" />
-
-
 ## Overview
 
 This repository contains a novel deep learning pipeline for analyzing whole slide images (WSIs) of human brain tissue to characterize the earliest microstructural changes following repetitive head impacts (RHI) that may lead to chronic traumatic encephalopathy (CTE). The pipeline integrates multiple machine learning approaches including attention-based multiple instance learning (aMIL), semi-supervised learning, and novel clustering techniques to identify vascular injury patterns in young contact sports athletes.
